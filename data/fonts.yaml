@@ -1,0 +1,36 @@
+font:
+  - file: "fonts/sanfrancisco.ttf"
+    id: sf_xxlg
+    size: 68
+    bpp: 4
+
+  - file: "fonts/sanfrancisco.ttf"
+    id: sf_xlg
+    size: 42
+    bpp: 4
+
+  - file: "fonts/sanfrancisco.ttf"
+    id: sf_lg
+    size: 36
+    bpp: 4
+
+  - file: "fonts/sanfrancisco.ttf"
+    id: sf_md
+    size: 30
+    bpp: 4
+
+  - file: "fonts/sanfrancisco.ttf"
+    id: sf_sm
+    size: 24
+    bpp: 4
+
+  - file: "fonts/sanfrancisco.ttf"
+    id: sf_xsm
+    size: 14
+    bpp: 4
+
+  - file: "fonts/sanfrancisco.ttf"
+    id: sf_xxsm
+    size: 12
+    bpp: 4
+

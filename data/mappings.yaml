@@ -1,0 +1,66 @@
+mapping:
+  - id: weather_icon
+    from: string
+    to: image
+    entries:
+      0: d0
+      1: d1
+      2: d2
+      3: d3
+      45: d45
+      48: d48
+      51: d51
+      53: d53
+      55: d55
+      56: d56
+      57: d57
+      61: d61
+      63: d63
+      65: d65
+      66: d66
+      67: d67
+      71: d71
+      73: d73
+      75: d75
+      77: d77
+      80: d80
+      81: d81
+      82: d82
+      85: d85
+      86: d86
+      95: d95
+      96: d96
+      99: d99
+
+  - id: weather_text
+    from: string
+    to: string
+    entries:
+      0: "Clear Sky"
+      1: "Mainly Clear"
+      2: "Partly Cloudy"
+      3: "Overcast"
+      45: "Fog"
+      48: "Fog"
+      51: "Light Drizzle"
+      53: "Moderate Drizzle"
+      55: "Dense Drizzle"
+      56: "Freezing Light Drizzle"
+      57: "Freezine Dense Drizzle"
+      61: "Light Rain"
+      63: "Moderate Rain"
+      65: "Heavy Rain"
+      66: "Freezing Light Rain"
+      67: "Freezing Heavy Rain"
+      71: "Light Snow"
+      73: "Moderate Snow"
+      75: "Heavy Snowfall"
+      77: "Snow grains"
+      80: "Light Rain"
+      81: "Moderate Rain"
+      82: "Heavy Rain"
+      85: "Light Snow"
+      86: "Heavy Snow"
+      95: "Thunderstorm"
+      96: "Thunderstorm Slight Hail"
+      99: "Thunderstorm Heavy Hail"

@@ -1,0 +1,369 @@
+text_sensor:
+  - platform: homeassistant
+    id: day0_temp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_temp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_temp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day0_pre
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_pre
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_pre
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day0_wind
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_wind
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_wind
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day0_cond
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_code
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_cond
+          text: !lambda return weather_text[x];
+  - platform: homeassistant
+    id: day0_code
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_code
+    on_value:
+      - lvgl.image.update:
+          id: img_day0_code
+          src: !lambda return id(weather_icon)[x];
+  - platform: homeassistant
+    id: day0_sunr
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_sunr
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_sunr
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day0_suns
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_suns
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_suns
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day0_pres
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_pres
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_pres
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day0_curtemp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_curtemp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_curtemp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day0_curhum
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day0_curhum
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day0_curhum
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day1_time
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day1_time
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day1_time
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day1_temp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day1_temp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day1_temp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day1_pre
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day1_pre
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day1_pre
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day1_wind
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day1_wind
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day1_wind
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day1_cond
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day1_code
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day1_cond
+          text: !lambda return weather_text[x];
+  - platform: homeassistant
+    id: day1_code
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day1_code
+    on_value:
+      - lvgl.image.update:
+          id: img_day1_code
+          src: !lambda return id(weather_icon)[x];
+  - platform: homeassistant
+    id: day2_time
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day2_time
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day2_time
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day2_temp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day2_temp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day2_temp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day2_pre
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day2_pre
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day2_pre
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day2_wind
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day2_wind
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day2_wind
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day2_cond
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day2_code
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day2_cond
+          text: !lambda return weather_text[x];
+  - platform: homeassistant
+    id: day2_code
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day2_code
+    on_value:
+      - lvgl.image.update:
+          id: img_day2_code
+          src: !lambda return id(weather_icon)[x];
+  - platform: homeassistant
+    id: day3_time
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day3_time
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day3_time
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day3_temp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day3_temp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day3_temp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day3_pre
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day3_pre
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day3_pre
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day3_wind
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day3_wind
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day3_wind
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day3_cond
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day3_code
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day3_cond
+          text: !lambda return weather_text[x];
+  - platform: homeassistant
+    id: day3_code
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day3_code
+    on_value:
+      - lvgl.image.update:
+          id: img_day3_code
+          src: !lambda return id(weather_icon)[x];
+  - platform: homeassistant
+    id: day4_time
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day4_time
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day4_time
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day4_temp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day4_temp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day4_temp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day4_pre
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day4_pre
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day4_pre
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day4_wind
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day4_wind
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day4_wind
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day4_cond
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day4_code
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day4_cond
+          text: !lambda return weather_text[x];
+  - platform: homeassistant
+    id: day4_code
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day4_code
+    on_value:
+      - lvgl.image.update:
+          id: img_day4_code
+          src: !lambda return id(weather_icon)[x];
+  - platform: homeassistant
+    id: day5_time
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day5_time
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day5_time
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day5_temp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day5_temp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day5_temp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day5_pre
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day5_pre
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day5_pre
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day5_wind
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day5_wind
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day5_wind
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day5_cond
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day5_code
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day5_cond
+          text: !lambda return weather_text[x];
+  - platform: homeassistant
+    id: day5_code
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day5_code
+    on_value:
+      - lvgl.image.update:
+          id: img_day5_code
+          src: !lambda return id(weather_icon)[x];
+  - platform: homeassistant
+    id: day6_time
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day6_time
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day6_time
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day6_temp
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day6_temp
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day6_temp
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day6_pre
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day6_pre
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day6_pre
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day6_wind
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day6_wind
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day6_wind
+          text: !lambda return x;
+  - platform: homeassistant
+    id: day6_cond
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day6_code
+    on_value:
+      - lvgl.label.update:
+          id: lbl_day6_cond
+          text: !lambda return weather_text[x];
+  - platform: homeassistant
+    id: day6_code
+    entity_id: sensor.aaa_daily_weather_forecast
+    attribute: day6_code
+    on_value:
+      - lvgl.image.update:
+          id: img_day6_code
+          src: !lambda return id(weather_icon)[x];

@@ -1,0 +1,594 @@
+
+- obj:
+    width: 100%
+    height: 100%
+    bg_opa: 100%
+    border_opa: transp
+    bg_image_src: bg_img
+    bg_image_opa: 100%
+    layout:
+      type: flex
+      flex_flow: row_wrap
+      flex_align_main: center
+    widgets:
+
+      # CURRENT WEATHER
+      - obj:
+          width: 100%
+          height: 335
+          bg_color: black
+          bg_opa: 70%
+          border_opa: transp
+          radius: 15px
+          layout:
+            type: flex
+            flex_flow: column_wrap
+            flex_align_cross: center
+            flex_align_track: center
+          widgets:
+            - label:
+                id: lbl_datetime
+                text_font: sf_xlg
+                text_color: white
+            - obj:
+                width: 500px
+                height: 80px
+                bg_opa: transp
+                border_opa: transp
+                layout:
+                  type: flex
+                  flex_flow: row
+                  flex_align_cross: center
+                  flex_align_track: center
+                pad_top: -30px
+                pad_bottom: -30px
+                align: center
+                widgets:
+                  - image:
+                      id: img_day0_code
+                      src: missing
+                  - label:
+                      id: lbl_day0_cond
+                      text_font: sf_lg
+                      text_color: white
+
+            - obj:
+                width: 100%
+                height: 150px
+                bg_opa: transp
+                border_opa: transp
+                layout:
+                  type: flex
+                  flex_flow: row
+                  flex_align_cross: space_around
+                  flex_align_track: space_around
+                pad_top: -30px
+                pad_bottom: -30px
+                widgets:
+                  - obj:
+                      width: 24%
+                      bg_opa: transp
+                      border_opa: transp
+                      layout:
+                        type: flex
+                        flex_flow: column
+                        flex_align_cross: center
+                        flex_align_track: center
+                      widgets:
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "TEMPERATURE"
+                        - label:
+                            id: lbl_day0_curtemp
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "HUMIDITY"
+                        - label:
+                            id: lbl_day0_curhum
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                            pad_bottom: -15px
+                  - obj:
+                      width: 24%
+                      bg_opa: transp
+                      border_opa: transp
+                      layout:
+                        type: flex
+                        flex_flow: column
+                        flex_align_cross: center
+                        flex_align_track: center
+                      widgets:
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "HIGH / LOW"
+                        - label:
+                            id: lbl_day0_temp
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "PRECIPITATIONS"
+                        - label:
+                            id: lbl_day0_pre
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                            pad_bottom: -15px
+                  - obj:
+                      width: 24%
+                      bg_opa: transp
+                      border_opa: transp
+                      layout:
+                        type: flex
+                        flex_flow: column
+                        flex_align_cross: center
+                        flex_align_track: center
+                      widgets:
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "WIND SPEED"
+                        - label:
+                            id: lbl_day0_wind
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "PRESSURE"
+                        - label:
+                            id: lbl_day0_pres
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                            pad_bottom: -15px
+                  - obj:
+                      width: 24%
+                      bg_opa: transp
+                      border_opa: transp
+                      layout:
+                        type: flex
+                        flex_flow: column
+                        flex_align_cross: center
+                        flex_align_track: center
+                      widgets:
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "SUNRISE"
+                        - label:
+                            id: lbl_day0_sunr
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                        - label:
+                            align: center
+                            text_font: sf_xsm
+                            text_color: white
+                            text: "SUNSET"
+                        - label:
+                            id: lbl_day0_suns
+                            align: center
+                            text_font: sf_md
+                            text_color: white
+                            pad_top: -15px
+                            pad_bottom: -15px
+
+
+
+      # WEEKLY FORECAST
+      - obj:
+          width: 200
+          height: 345
+          bg_color: black
+          bg_opa: 70%
+          border_opa: transp
+          radius: 15px
+          layout:
+            type: flex
+            flex_flow: column_wrap
+            flex_align_cross: center
+            flex_align_track: center
+          widgets:
+            - label:
+                id: lbl_day1_time
+                text_font: sf_xlg
+                text_color: white
+                pad_top: -10px
+            - image:
+                id: img_day1_code
+                src: missing
+                align: center
+                pad_top: -20px
+                pad_bottom: -25px
+            - label:
+                id: lbl_day1_cond
+                align: center
+                text_font: sf_sm
+                text_color: white
+                pad_bottom: 20px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "HIGH / LOW"
+            - label:
+                align: center
+                id: lbl_day1_temp
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "PRECIPITATIONS"
+            - label:
+                align: center
+                id: lbl_day1_pre
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "WIND SPEED"
+            - label:
+                align: center
+                id: lbl_day1_wind
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+
+      - obj:
+          width: 200
+          height: 345
+          bg_color: black
+          bg_opa: 70%
+          border_opa: transp
+          radius: 15px
+          layout:
+            type: flex
+            flex_flow: column_wrap
+            flex_align_cross: center
+            flex_align_track: center
+          widgets:
+            - label:
+                id: lbl_day2_time
+                text_font: sf_xlg
+                text_color: white
+                pad_top: -10px
+            - image:
+                id: img_day2_code
+                src: missing
+                align: center
+                pad_top: -20px
+                pad_bottom: -25px
+            - label:
+                id: lbl_day2_cond
+                align: center
+                text_font: sf_sm
+                text_color: white
+                pad_bottom: 20px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "HIGH / LOW"
+            - label:
+                align: center
+                id: lbl_day2_temp
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "PRECIPITATIONS"
+            - label:
+                align: center
+                id: lbl_day2_pre
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "WIND SPEED"
+            - label:
+                align: center
+                id: lbl_day2_wind
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+
+      - obj:
+          width: 200
+          height: 345
+          bg_color: black
+          bg_opa: 70%
+          border_opa: transp
+          radius: 15px
+          layout:
+            type: flex
+            flex_flow: column_wrap
+            flex_align_cross: center
+            flex_align_track: center
+          widgets:
+            - label:
+                id: lbl_day3_time
+                text_font: sf_xlg
+                text_color: white
+                pad_top: -10px
+            - image:
+                id: img_day3_code
+                src: missing
+                align: center
+                pad_top: -20px
+                pad_bottom: -25px
+            - label:
+                id: lbl_day3_cond
+                align: center
+                text_font: sf_sm
+                text_color: white
+                pad_bottom: 20px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "HIGH / LOW"
+            - label:
+                align: center
+                id: lbl_day3_temp
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "PRECIPITATIONS"
+            - label:
+                align: center
+                id: lbl_day3_pre
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "WIND SPEED"
+            - label:
+                align: center
+                id: lbl_day3_wind
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+
+      - obj:
+          width: 200
+          height: 345
+          bg_color: black
+          bg_opa: 70%
+          border_opa: transp
+          radius: 15px
+          layout:
+            type: flex
+            flex_flow: column_wrap
+            flex_align_cross: center
+            flex_align_track: center
+          widgets:
+            - label:
+                id: lbl_day4_time
+                text_font: sf_xlg
+                text_color: white
+                pad_top: -10px
+            - image:
+                id: img_day4_code
+                src: missing
+                align: center
+                pad_top: -20px
+                pad_bottom: -25px
+            - label:
+                id: lbl_day4_cond
+                align: center
+                text_font: sf_sm
+                text_color: white
+                pad_bottom: 20px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "HIGH / LOW"
+            - label:
+                align: center
+                id: lbl_day4_temp
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "PRECIPITATIONS"
+            - label:
+                align: center
+                id: lbl_day4_pre
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "WIND SPEED"
+            - label:
+                align: center
+                id: lbl_day4_wind
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+
+      - obj:
+          width: 200
+          height: 345
+          bg_color: black
+          bg_opa: 70%
+          border_opa: transp
+          radius: 15px
+          layout:
+            type: flex
+            flex_flow: column_wrap
+            flex_align_cross: center
+            flex_align_track: center
+          widgets:
+            - label:
+                id: lbl_day5_time
+                text_font: sf_xlg
+                text_color: white
+                pad_top: -10px
+            - image:
+                id: img_day5_code
+                src: missing
+                align: center
+                pad_top: -20px
+                pad_bottom: -25px
+            - label:
+                id: lbl_day5_cond
+                align: center
+                text_font: sf_sm
+                text_color: white
+                pad_bottom: 20px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "HIGH / LOW"
+            - label:
+                align: center
+                id: lbl_day5_temp
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "PRECIPITATIONS"
+            - label:
+                align: center
+                id: lbl_day5_pre
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "WIND SPEED"
+            - label:
+                align: center
+                id: lbl_day5_wind
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+
+      - obj:
+          width: 200
+          height: 345
+          bg_color: black
+          bg_opa: 70%
+          border_opa: transp
+          radius: 15px
+          layout:
+            type: flex
+            flex_flow: column_wrap
+            flex_align_cross: center
+            flex_align_track: center
+          widgets:
+            - label:
+                id: lbl_day6_time
+                text_font: sf_xlg
+                text_color: white
+                pad_top: -10px
+            - image:
+                id: img_day6_code
+                src: missing
+                align: center
+                pad_top: -20px
+                pad_bottom: -25px
+            - label:
+                id: lbl_day6_cond
+                align: center
+                text_font: sf_sm
+                text_color: white
+                pad_bottom: 20px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "HIGH / LOW"
+            - label:
+                align: center
+                id: lbl_day6_temp
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "PRECIPITATIONS"
+            - label:
+                align: center
+                id: lbl_day6_pre
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+            - label:
+                align: center
+                text_font: sf_xxsm
+                text_color: white
+                text: "WIND SPEED"
+            - label:
+                align: center
+                id: lbl_day6_wind
+                text_font: sf_sm
+                text_color: white
+                pad_top: -10px
+
+
+
+
+
+
+
+

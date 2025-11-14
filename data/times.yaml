@@ -1,0 +1,15 @@
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+    on_time:
+      - seconds: 0
+        minutes: /1
+        then:
+          - lvgl.label.update:
+              id: lbl_datetime
+              text: !lambda return ESPTime::from_epoch_local(id(homeassistant_time).now().timestamp).strftime("%A, %B %m   %I:%M %p");
+    on_time_sync:
+        then:
+          - lvgl.label.update:
+              id: lbl_datetime
+              text: !lambda return ESPTime::from_epoch_local(id(homeassistant_time).now().timestamp).strftime("%A, %B %m   %I:%M %p");

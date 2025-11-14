@@ -1,0 +1,31 @@
+packages:
+  - !include data/fonts.yaml
+  - !include data/images.yaml
+  - !include data/mappings.yaml
+  - !include data/text_sensors.yaml
+  - !include data/times.yaml
+
+esphome:
+  name: hosttest
+  friendly_name: HOSTTEST
+
+host:
+
+api:
+
+logger:
+  level: DEBUG
+
+display:
+  - platform: sdl
+    show_test_card: false
+    dimensions:
+      width: 1280
+      height: 720
+
+lvgl:
+  pages:
+    - id: forecast_page
+      widgets: !include
+        file: forecast.yaml
+
