@@ -21,11 +21,14 @@ display:
     show_test_card: false
     dimensions:
       width: 1280
-      height: 720
+      height: 800
 
 lvgl:
   pages:
-    - id: forecast_page
+    - id: daily_page
       widgets: !include
-        file: forecast.yaml
+        file: pages/daily.yaml
+    - id: hourly_page
+      widgets: !include
+        file: pages/hourly.yaml
 

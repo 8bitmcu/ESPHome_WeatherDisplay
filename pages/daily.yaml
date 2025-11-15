@@ -15,7 +15,7 @@
       # CURRENT WEATHER
       - obj:
           width: 100%
-          height: 335
+          height: 375
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -203,7 +203,7 @@
       # WEEKLY FORECAST
       - obj:
           width: 200
-          height: 345
+          height: 385
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -219,18 +219,19 @@
                 text_font: sf_xlg
                 text_color: white
                 pad_top: -10px
+                pad_bottom: 10px
             - image:
                 id: img_day1_code
                 src: missing
                 align: center
-                pad_top: -20px
+                pad_top: -10px
                 pad_bottom: -25px
             - label:
                 id: lbl_day1_cond
                 align: center
                 text_font: sf_sm
                 text_color: white
-                pad_bottom: 20px
+                pad_bottom: 30px
             - label:
                 align: center
                 text_font: sf_xxsm
@@ -267,7 +268,7 @@
 
       - obj:
           width: 200
-          height: 345
+          height: 385
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -283,18 +284,19 @@
                 text_font: sf_xlg
                 text_color: white
                 pad_top: -10px
+                pad_bottom: 10px
             - image:
                 id: img_day2_code
                 src: missing
                 align: center
-                pad_top: -20px
+                pad_top: -10px
                 pad_bottom: -25px
             - label:
                 id: lbl_day2_cond
                 align: center
                 text_font: sf_sm
                 text_color: white
-                pad_bottom: 20px
+                pad_bottom: 30px
             - label:
                 align: center
                 text_font: sf_xxsm
@@ -331,7 +333,7 @@
 
       - obj:
           width: 200
-          height: 345
+          height: 385
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -347,18 +349,19 @@
                 text_font: sf_xlg
                 text_color: white
                 pad_top: -10px
+                pad_bottom: 10px
             - image:
                 id: img_day3_code
                 src: missing
                 align: center
-                pad_top: -20px
+                pad_top: -10px
                 pad_bottom: -25px
             - label:
                 id: lbl_day3_cond
                 align: center
                 text_font: sf_sm
                 text_color: white
-                pad_bottom: 20px
+                pad_bottom: 30px
             - label:
                 align: center
                 text_font: sf_xxsm
@@ -395,7 +398,7 @@
 
       - obj:
           width: 200
-          height: 345
+          height: 385
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -411,18 +414,19 @@
                 text_font: sf_xlg
                 text_color: white
                 pad_top: -10px
+                pad_bottom: 10px
             - image:
                 id: img_day4_code
                 src: missing
                 align: center
-                pad_top: -20px
+                pad_top: -10px
                 pad_bottom: -25px
             - label:
                 id: lbl_day4_cond
                 align: center
                 text_font: sf_sm
                 text_color: white
-                pad_bottom: 20px
+                pad_bottom: 30px
             - label:
                 align: center
                 text_font: sf_xxsm
@@ -459,7 +463,7 @@
 
       - obj:
           width: 200
-          height: 345
+          height: 385
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -475,18 +479,19 @@
                 text_font: sf_xlg
                 text_color: white
                 pad_top: -10px
+                pad_bottom: 10px
             - image:
                 id: img_day5_code
                 src: missing
                 align: center
-                pad_top: -20px
+                pad_top: -10px
                 pad_bottom: -25px
             - label:
                 id: lbl_day5_cond
                 align: center
                 text_font: sf_sm
                 text_color: white
-                pad_bottom: 20px
+                pad_bottom: 30px
             - label:
                 align: center
                 text_font: sf_xxsm
@@ -523,7 +528,7 @@
 
       - obj:
           width: 200
-          height: 345
+          height: 385
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -539,18 +544,19 @@
                 text_font: sf_xlg
                 text_color: white
                 pad_top: -10px
+                pad_bottom: 10px
             - image:
                 id: img_day6_code
                 src: missing
                 align: center
-                pad_top: -20px
+                pad_top: -10px
                 pad_bottom: -25px
             - label:
                 id: lbl_day6_cond
                 align: center
                 text_font: sf_sm
                 text_color: white
-                pad_bottom: 20px
+                pad_bottom: 30px
             - label:
                 align: center
                 text_font: sf_xxsm
