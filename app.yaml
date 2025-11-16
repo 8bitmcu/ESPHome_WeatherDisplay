@@ -23,8 +23,19 @@ display:
       width: 1280
       height: 800
 
+touchscreen:
+  - platform: sdl
+    on_touch:
+      then:
+        - lvgl.page.next:
+            animation: OUT_LEFT
+            time: 300ms
+
 lvgl:
   pages:
+    - id: home_page
+      widgets: !include
+        file: pages/home.yaml
     - id: daily_page
       widgets: !include
         file: pages/daily.yaml

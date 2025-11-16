@@ -4,4 +4,4 @@
 /.esphome/
 /secrets.yaml
 
-fonts/*
+fonts/sanfrancisco.ttf

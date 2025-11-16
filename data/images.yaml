@@ -119,3 +119,7 @@ image:
   - file: "img/bg1.png"
     type: rgb565
     id: bg_img
+  - file: "img/home_ico.png"
+    type: rgb565
+    id: home_img
+    transparency: alpha_channel
