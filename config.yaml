@@ -1,0 +1,2 @@
+substitutions:
+  weather_sensor: sensor.weatherpanel_weather_forecast

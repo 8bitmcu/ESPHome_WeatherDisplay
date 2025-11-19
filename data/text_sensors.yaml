@@ -1,7 +1,7 @@
 text_sensor:
   - platform: homeassistant
     id: day0_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_temp
     on_value:
       - lvgl.label.update:
@@ -9,7 +9,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day0_pre
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_pre
     on_value:
       - lvgl.label.update:
@@ -17,7 +17,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day0_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_wind
     on_value:
       - lvgl.label.update:
@@ -25,7 +25,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day0_cond
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_code
     on_value:
       - lvgl.label.update:
@@ -33,7 +33,7 @@ text_sensor:
           text: !lambda return weather_text[x];
   - platform: homeassistant
     id: day0_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_code
     on_value:
       - lvgl.image.update:
@@ -41,7 +41,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: day0_sunr
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_sunr
     on_value:
       - lvgl.label.update:
@@ -49,7 +49,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day0_suns
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_suns
     on_value:
       - lvgl.label.update:
@@ -57,7 +57,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day0_pres
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_pres
     on_value:
       - lvgl.label.update:
@@ -65,7 +65,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day0_curtemp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_curtemp
     on_value:
       - lvgl.label.update:
@@ -73,7 +73,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day0_curhum
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day0_curhum
     on_value:
       - lvgl.label.update:
@@ -81,7 +81,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day1_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day1_time
     on_value:
       - lvgl.label.update:
@@ -89,7 +89,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day1_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day1_temp
     on_value:
       - lvgl.label.update:
@@ -97,7 +97,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day1_pre
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day1_pre
     on_value:
       - lvgl.label.update:
@@ -105,7 +105,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day1_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day1_wind
     on_value:
       - lvgl.label.update:
@@ -113,7 +113,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day1_cond
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day1_code
     on_value:
       - lvgl.label.update:
@@ -121,7 +121,7 @@ text_sensor:
           text: !lambda return weather_text[x];
   - platform: homeassistant
     id: day1_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day1_code
     on_value:
       - lvgl.image.update:
@@ -129,7 +129,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: day2_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day2_time
     on_value:
       - lvgl.label.update:
@@ -137,7 +137,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day2_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day2_temp
     on_value:
       - lvgl.label.update:
@@ -145,7 +145,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day2_pre
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day2_pre
     on_value:
       - lvgl.label.update:
@@ -153,7 +153,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day2_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day2_wind
     on_value:
       - lvgl.label.update:
@@ -161,7 +161,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day2_cond
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day2_code
     on_value:
       - lvgl.label.update:
@@ -169,7 +169,7 @@ text_sensor:
           text: !lambda return weather_text[x];
   - platform: homeassistant
     id: day2_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day2_code
     on_value:
       - lvgl.image.update:
@@ -177,7 +177,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: day3_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day3_time
     on_value:
       - lvgl.label.update:
@@ -185,7 +185,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day3_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day3_temp
     on_value:
       - lvgl.label.update:
@@ -193,7 +193,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day3_pre
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day3_pre
     on_value:
       - lvgl.label.update:
@@ -201,7 +201,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day3_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day3_wind
     on_value:
       - lvgl.label.update:
@@ -209,7 +209,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day3_cond
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day3_code
     on_value:
       - lvgl.label.update:
@@ -217,7 +217,7 @@ text_sensor:
           text: !lambda return weather_text[x];
   - platform: homeassistant
     id: day3_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day3_code
     on_value:
       - lvgl.image.update:
@@ -225,7 +225,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: day4_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day4_time
     on_value:
       - lvgl.label.update:
@@ -233,7 +233,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day4_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day4_temp
     on_value:
       - lvgl.label.update:
@@ -241,7 +241,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day4_pre
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day4_pre
     on_value:
       - lvgl.label.update:
@@ -249,7 +249,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day4_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day4_wind
     on_value:
       - lvgl.label.update:
@@ -257,7 +257,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day4_cond
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day4_code
     on_value:
       - lvgl.label.update:
@@ -265,7 +265,7 @@ text_sensor:
           text: !lambda return weather_text[x];
   - platform: homeassistant
     id: day4_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day4_code
     on_value:
       - lvgl.image.update:
@@ -273,7 +273,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: day5_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day5_time
     on_value:
       - lvgl.label.update:
@@ -281,7 +281,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day5_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day5_temp
     on_value:
       - lvgl.label.update:
@@ -289,7 +289,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day5_pre
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day5_pre
     on_value:
       - lvgl.label.update:
@@ -297,7 +297,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day5_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day5_wind
     on_value:
       - lvgl.label.update:
@@ -305,7 +305,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day5_cond
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day5_code
     on_value:
       - lvgl.label.update:
@@ -313,7 +313,7 @@ text_sensor:
           text: !lambda return weather_text[x];
   - platform: homeassistant
     id: day5_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day5_code
     on_value:
       - lvgl.image.update:
@@ -321,7 +321,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: day6_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day6_time
     on_value:
       - lvgl.label.update:
@@ -329,7 +329,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day6_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day6_temp
     on_value:
       - lvgl.label.update:
@@ -337,7 +337,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day6_pre
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day6_pre
     on_value:
       - lvgl.label.update:
@@ -345,7 +345,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day6_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day6_wind
     on_value:
       - lvgl.label.update:
@@ -353,7 +353,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: day6_cond
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day6_code
     on_value:
       - lvgl.label.update:
@@ -361,7 +361,7 @@ text_sensor:
           text: !lambda return weather_text[x];
   - platform: homeassistant
     id: day6_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: day6_code
     on_value:
       - lvgl.image.update:
@@ -370,7 +370,7 @@ text_sensor:
 
   - platform: homeassistant
     id: hour0_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour0_time
     on_value:
       - lvgl.label.update:
@@ -378,7 +378,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour0_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour0_code
     on_value:
       - lvgl.image.update:
@@ -386,7 +386,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour0_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour0_temp
     on_value:
       - lvgl.label.update:
@@ -394,7 +394,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour0_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour0_preprob
     on_value:
       - lvgl.label.update:
@@ -402,7 +402,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour0_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour0_preacc
     on_value:
       - lvgl.label.update:
@@ -410,7 +410,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour0_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour0_wind
     on_value:
       - lvgl.label.update:
@@ -418,7 +418,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour1_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour1_time
     on_value:
       - lvgl.label.update:
@@ -426,7 +426,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour1_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour1_code
     on_value:
       - lvgl.image.update:
@@ -434,7 +434,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour1_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour1_temp
     on_value:
       - lvgl.label.update:
@@ -442,7 +442,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour1_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour1_preprob
     on_value:
       - lvgl.label.update:
@@ -450,7 +450,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour1_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour1_preacc
     on_value:
       - lvgl.label.update:
@@ -458,7 +458,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour1_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour1_wind
     on_value:
       - lvgl.label.update:
@@ -466,7 +466,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour2_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour2_time
     on_value:
       - lvgl.label.update:
@@ -474,7 +474,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour2_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour2_code
     on_value:
       - lvgl.image.update:
@@ -482,7 +482,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour2_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour2_temp
     on_value:
       - lvgl.label.update:
@@ -490,7 +490,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour2_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour2_preprob
     on_value:
       - lvgl.label.update:
@@ -498,7 +498,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour2_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour2_preacc
     on_value:
       - lvgl.label.update:
@@ -506,7 +506,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour2_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour2_wind
     on_value:
       - lvgl.label.update:
@@ -514,7 +514,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour3_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour3_time
     on_value:
       - lvgl.label.update:
@@ -522,7 +522,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour3_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour3_code
     on_value:
       - lvgl.image.update:
@@ -530,7 +530,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour3_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour3_temp
     on_value:
       - lvgl.label.update:
@@ -538,7 +538,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour3_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour3_preprob
     on_value:
       - lvgl.label.update:
@@ -546,7 +546,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour3_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour3_preacc
     on_value:
       - lvgl.label.update:
@@ -554,7 +554,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour3_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour3_wind
     on_value:
       - lvgl.label.update:
@@ -562,7 +562,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour4_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour4_time
     on_value:
       - lvgl.label.update:
@@ -570,7 +570,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour4_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour4_code
     on_value:
       - lvgl.image.update:
@@ -578,7 +578,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour4_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour4_temp
     on_value:
       - lvgl.label.update:
@@ -586,7 +586,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour4_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour4_preprob
     on_value:
       - lvgl.label.update:
@@ -594,7 +594,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour4_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour4_preacc
     on_value:
       - lvgl.label.update:
@@ -602,7 +602,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour4_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour4_wind
     on_value:
       - lvgl.label.update:
@@ -610,7 +610,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour5_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour5_time
     on_value:
       - lvgl.label.update:
@@ -618,7 +618,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour5_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour5_code
     on_value:
       - lvgl.image.update:
@@ -626,7 +626,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour5_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour5_temp
     on_value:
       - lvgl.label.update:
@@ -634,7 +634,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour5_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour5_preprob
     on_value:
       - lvgl.label.update:
@@ -642,7 +642,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour5_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour5_preacc
     on_value:
       - lvgl.label.update:
@@ -650,7 +650,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour5_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour5_wind
     on_value:
       - lvgl.label.update:
@@ -658,7 +658,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour6_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour6_time
     on_value:
       - lvgl.label.update:
@@ -666,7 +666,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour6_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour6_code
     on_value:
       - lvgl.image.update:
@@ -674,7 +674,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour6_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour6_temp
     on_value:
       - lvgl.label.update:
@@ -682,7 +682,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour6_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour6_preprob
     on_value:
       - lvgl.label.update:
@@ -690,7 +690,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour6_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour6_preacc
     on_value:
       - lvgl.label.update:
@@ -698,7 +698,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour6_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour6_wind
     on_value:
       - lvgl.label.update:
@@ -706,7 +706,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour7_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour7_time
     on_value:
       - lvgl.label.update:
@@ -714,7 +714,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour7_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour7_code
     on_value:
       - lvgl.image.update:
@@ -722,7 +722,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour7_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour7_temp
     on_value:
       - lvgl.label.update:
@@ -730,7 +730,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour7_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour7_preprob
     on_value:
       - lvgl.label.update:
@@ -738,7 +738,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour7_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour7_preacc
     on_value:
       - lvgl.label.update:
@@ -746,7 +746,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour7_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour7_wind
     on_value:
       - lvgl.label.update:
@@ -754,7 +754,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour8_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour8_time
     on_value:
       - lvgl.label.update:
@@ -762,7 +762,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour8_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour8_code
     on_value:
       - lvgl.image.update:
@@ -770,7 +770,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour8_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour8_temp
     on_value:
       - lvgl.label.update:
@@ -778,7 +778,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour8_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour8_preprob
     on_value:
       - lvgl.label.update:
@@ -786,7 +786,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour8_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour8_preacc
     on_value:
       - lvgl.label.update:
@@ -794,7 +794,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour8_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour8_wind
     on_value:
       - lvgl.label.update:
@@ -802,7 +802,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour9_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour9_time
     on_value:
       - lvgl.label.update:
@@ -810,7 +810,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour9_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour9_code
     on_value:
       - lvgl.image.update:
@@ -818,7 +818,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour9_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour9_temp
     on_value:
       - lvgl.label.update:
@@ -826,7 +826,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour9_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour9_preprob
     on_value:
       - lvgl.label.update:
@@ -834,7 +834,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour9_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour9_preacc
     on_value:
       - lvgl.label.update:
@@ -842,7 +842,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour9_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour9_wind
     on_value:
       - lvgl.label.update:
@@ -850,7 +850,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour10_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour10_time
     on_value:
       - lvgl.label.update:
@@ -858,7 +858,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour10_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour10_code
     on_value:
       - lvgl.image.update:
@@ -866,7 +866,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour10_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour10_temp
     on_value:
       - lvgl.label.update:
@@ -874,7 +874,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour10_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour10_preprob
     on_value:
       - lvgl.label.update:
@@ -882,7 +882,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour10_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour10_preacc
     on_value:
       - lvgl.label.update:
@@ -890,7 +890,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour10_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour10_wind
     on_value:
       - lvgl.label.update:
@@ -898,7 +898,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour11_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour11_time
     on_value:
       - lvgl.label.update:
@@ -906,7 +906,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour11_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour11_code
     on_value:
       - lvgl.image.update:
@@ -914,7 +914,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour11_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour11_temp
     on_value:
       - lvgl.label.update:
@@ -922,7 +922,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour11_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour11_preprob
     on_value:
       - lvgl.label.update:
@@ -930,7 +930,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour11_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour11_preacc
     on_value:
       - lvgl.label.update:
@@ -938,7 +938,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour11_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour11_wind
     on_value:
       - lvgl.label.update:
@@ -946,7 +946,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour12_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour12_time
     on_value:
       - lvgl.label.update:
@@ -954,7 +954,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour12_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour12_code
     on_value:
       - lvgl.image.update:
@@ -962,7 +962,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour12_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour12_temp
     on_value:
       - lvgl.label.update:
@@ -970,7 +970,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour12_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour12_preprob
     on_value:
       - lvgl.label.update:
@@ -978,7 +978,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour12_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour12_preacc
     on_value:
       - lvgl.label.update:
@@ -986,7 +986,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour12_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour12_wind
     on_value:
       - lvgl.label.update:
@@ -994,7 +994,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour13_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour13_time
     on_value:
       - lvgl.label.update:
@@ -1002,7 +1002,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour13_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour13_code
     on_value:
       - lvgl.image.update:
@@ -1010,7 +1010,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour13_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour13_temp
     on_value:
       - lvgl.label.update:
@@ -1018,7 +1018,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour13_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour13_preprob
     on_value:
       - lvgl.label.update:
@@ -1026,7 +1026,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour13_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour13_preacc
     on_value:
       - lvgl.label.update:
@@ -1034,7 +1034,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour13_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour13_wind
     on_value:
       - lvgl.label.update:
@@ -1042,7 +1042,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour14_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour14_time
     on_value:
       - lvgl.label.update:
@@ -1050,7 +1050,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour14_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour14_code
     on_value:
       - lvgl.image.update:
@@ -1058,7 +1058,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour14_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour14_temp
     on_value:
       - lvgl.label.update:
@@ -1066,7 +1066,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour14_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour14_preprob
     on_value:
       - lvgl.label.update:
@@ -1074,7 +1074,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour14_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour14_preacc
     on_value:
       - lvgl.label.update:
@@ -1082,7 +1082,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour14_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour14_wind
     on_value:
       - lvgl.label.update:
@@ -1090,7 +1090,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour15_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour15_time
     on_value:
       - lvgl.label.update:
@@ -1098,7 +1098,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour15_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour15_code
     on_value:
       - lvgl.image.update:
@@ -1106,7 +1106,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour15_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour15_temp
     on_value:
       - lvgl.label.update:
@@ -1114,7 +1114,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour15_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour15_preprob
     on_value:
       - lvgl.label.update:
@@ -1122,7 +1122,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour15_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour15_preacc
     on_value:
       - lvgl.label.update:
@@ -1130,7 +1130,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour15_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour15_wind
     on_value:
       - lvgl.label.update:
@@ -1138,7 +1138,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour16_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour16_time
     on_value:
       - lvgl.label.update:
@@ -1146,7 +1146,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour16_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour16_code
     on_value:
       - lvgl.image.update:
@@ -1154,7 +1154,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour16_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour16_temp
     on_value:
       - lvgl.label.update:
@@ -1162,7 +1162,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour16_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour16_preprob
     on_value:
       - lvgl.label.update:
@@ -1170,7 +1170,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour16_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour16_preacc
     on_value:
       - lvgl.label.update:
@@ -1178,7 +1178,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour16_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour16_wind
     on_value:
       - lvgl.label.update:
@@ -1186,7 +1186,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour17_time
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour17_time
     on_value:
       - lvgl.label.update:
@@ -1194,7 +1194,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour17_code
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour17_code
     on_value:
       - lvgl.image.update:
@@ -1202,7 +1202,7 @@ text_sensor:
           src: !lambda return id(weather_icon)[x];
   - platform: homeassistant
     id: hour17_temp
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour17_temp
     on_value:
       - lvgl.label.update:
@@ -1210,7 +1210,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour17_preprob
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour17_preprob
     on_value:
       - lvgl.label.update:
@@ -1218,7 +1218,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour17_preacc
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour17_preacc
     on_value:
       - lvgl.label.update:
@@ -1226,7 +1226,7 @@ text_sensor:
           text: !lambda return x;
   - platform: homeassistant
     id: hour17_wind
-    entity_id: sensor.weatherpanel_weather_forecast
+    entity_id: ${weather_sensor}
     attribute: hour17_wind
     on_value:
       - lvgl.label.update:

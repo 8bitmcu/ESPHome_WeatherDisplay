@@ -1,4 +1,5 @@
 packages:
+  - !include config.yaml
   - !include data/fonts.yaml
   - !include data/images.yaml
   - !include data/mappings.yaml
