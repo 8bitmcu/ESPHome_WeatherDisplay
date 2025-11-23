@@ -52,7 +52,7 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_sm
+                            text_font: sm
                             text_color: white
                             text: "UPSTAIRS"
                   - obj:
@@ -70,11 +70,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "TEMPERATURE"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "-24oC"
                             pad_top: -15px
@@ -94,11 +94,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HUMIDITY"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "76%"
                             pad_top: -15px
@@ -131,7 +131,7 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_sm
+                            text_font: sm
                             text_color: white
                             text: "DOWNSTAIRS"
                   - obj:
@@ -149,11 +149,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "TEMPERATURE"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "-24oC"
                             pad_top: -15px
@@ -173,11 +173,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HUMIDITY"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "76%"
                             pad_top: -15px
@@ -223,7 +223,7 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_sm
+                            text_font: sm
                             text_color: white
                             text: "AVERAGE"
                   - obj:
@@ -241,11 +241,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "TEMPERATURE"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "-24oC"
                             pad_top: -15px
@@ -265,11 +265,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HUMIDITY"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "76%"
                             pad_top: -15px
@@ -302,7 +302,7 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_sm
+                            text_font: sm
                             text_color: white
                             text: "NORTH"
                   - obj:
@@ -320,11 +320,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "TEMPERATURE"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "-24oC"
                             pad_top: -15px
@@ -344,11 +344,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HUMIDITY"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "76%"
                             pad_top: -15px
@@ -382,7 +382,7 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_sm
+                            text_font: sm
                             text_color: white
                             text: "EAST"
                   - obj:
@@ -400,11 +400,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "TEMPERATURE"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "-24oC"
                             pad_top: -15px
@@ -424,11 +424,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HUMIDITY"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "76%"
                             pad_top: -15px
@@ -462,7 +462,7 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_sm
+                            text_font: sm
                             text_color: white
                             text: "WEST"
                   - obj:
@@ -480,11 +480,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "TEMPERATURE"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "-24oC"
                             pad_top: -15px
@@ -504,11 +504,11 @@
                       pad_bottom: -15px
                       widgets:
                         - label:
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HUMIDITY"
                         - label:
-                            text_font: sf_lg
+                            text_font: lg
                             text_color: white
                             text: "76%"
                             pad_top: -15px

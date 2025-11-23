@@ -1,1 +1,29 @@
 # Weather Display for 1280x800 panels
+
+ESPHome Weather Panel configuration for 1280x800 displays. This project uses the [open-meteo](https://open-meteo.com/) API to fetch the hourly, daily and weekly forecasts.
+There are 3 pages to this project, each can be cycled by tapping the touchscreen. A 2 minute idle period will turn off the display, which can be turned on again with a single tap.
+
+The daily page presents current weather conditions along with a 6-day forecast in a card-based layout:
+- A banner showing 10 metrics including current temperature, humidity, high/low temperatures, precipitation, wind speed, pressure, sunrise, and sunset times
+- Six vertical cards displaying date, weather icon, condition, high/low temperature, precipitation, and wind speed for each upcoming day
+
+The hourly page displays granular weather predictions for the next 18 hours, with each hour showing six metrics: time, weather icon, temperature, precipitation probability, precipitation accumulation, and wind speed.
+
+### Supported Devices
+
+~~This project has only be tested on a [Guition JC8012P4A1](https://s.click.aliexpress.com/e/_c4s9RoNT) panel so far.~~
+
+  > This project is still a work in progress! No supported devices at the moment
+
+## Installation
+
+1. Copy the content of configuration.yaml into your home assistant's configuration.yaml
+2. In the same file, change the latitude and longitude coordinates for yours
+3. Edit and go over the esphome configuration in config.yaml
+4. Flash device-*.yaml to your device. If everything went well, you should now have the weather on your panel
+
+
+## Screenshots
+
+![todays forecast](assets/today.png)
+![hourly forecast](assets/hourly.png)

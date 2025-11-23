@@ -28,7 +28,7 @@
           widgets:
             - label:
                 id: lbl_datetime
-                text_font: sf_xlg
+                text_font: xlg
                 text_color: white
             - obj:
                 width: 500px
@@ -49,7 +49,7 @@
                       src: missing
                   - label:
                       id: lbl_day0_cond
-                      text_font: sf_lg
+                      text_font: lg
                       text_color: white
 
             - obj:
@@ -77,24 +77,24 @@
                       widgets:
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "TEMPERATURE"
                         - label:
                             id: lbl_day0_curtemp
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HUMIDITY"
                         - label:
                             id: lbl_day0_curhum
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                             pad_bottom: -15px
@@ -110,24 +110,24 @@
                       widgets:
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "HIGH / LOW"
                         - label:
                             id: lbl_day0_temp
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "PRECIPITATIONS"
                         - label:
                             id: lbl_day0_pre
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                             pad_bottom: -15px
@@ -143,24 +143,24 @@
                       widgets:
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "WIND SPEED"
                         - label:
                             id: lbl_day0_wind
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "PRESSURE"
                         - label:
                             id: lbl_day0_pres
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                             pad_bottom: -15px
@@ -176,24 +176,24 @@
                       widgets:
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "SUNRISE"
                         - label:
                             id: lbl_day0_sunr
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                         - label:
                             align: center
-                            text_font: sf_xsm
+                            text_font: xsm
                             text_color: white
                             text: "SUNSET"
                         - label:
                             id: lbl_day0_suns
                             align: center
-                            text_font: sf_md
+                            text_font: md
                             text_color: white
                             pad_top: -15px
                             pad_bottom: -15px
@@ -216,53 +216,53 @@
           widgets:
             - label:
                 id: lbl_day1_time
-                text_font: sf_xlg
+                text_font: xlg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -5px
             - image:
                 id: img_day1_code
                 src: missing
                 align: center
-                pad_top: -10px
+                pad_top: -15px
                 pad_bottom: -25px
             - label:
                 id: lbl_day1_cond
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_bottom: 30px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "HIGH / LOW"
             - label:
                 align: center
                 id: lbl_day1_temp
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 align: center
                 id: lbl_day1_pre
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 align: center
                 id: lbl_day1_wind
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
 
@@ -281,53 +281,53 @@
           widgets:
             - label:
                 id: lbl_day2_time
-                text_font: sf_xlg
+                text_font: xlg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -5px
             - image:
                 id: img_day2_code
                 src: missing
                 align: center
-                pad_top: -10px
+                pad_top: -15px
                 pad_bottom: -25px
             - label:
                 id: lbl_day2_cond
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_bottom: 30px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "HIGH / LOW"
             - label:
                 align: center
                 id: lbl_day2_temp
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 align: center
                 id: lbl_day2_pre
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 align: center
                 id: lbl_day2_wind
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
 
@@ -346,53 +346,53 @@
           widgets:
             - label:
                 id: lbl_day3_time
-                text_font: sf_xlg
+                text_font: xlg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -5px
             - image:
                 id: img_day3_code
                 src: missing
                 align: center
-                pad_top: -10px
+                pad_top: -15px
                 pad_bottom: -25px
             - label:
                 id: lbl_day3_cond
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_bottom: 30px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "HIGH / LOW"
             - label:
                 align: center
                 id: lbl_day3_temp
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 align: center
                 id: lbl_day3_pre
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 align: center
                 id: lbl_day3_wind
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
 
@@ -411,53 +411,53 @@
           widgets:
             - label:
                 id: lbl_day4_time
-                text_font: sf_xlg
+                text_font: xlg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -5px
             - image:
                 id: img_day4_code
                 src: missing
                 align: center
-                pad_top: -10px
+                pad_top: -15px
                 pad_bottom: -25px
             - label:
                 id: lbl_day4_cond
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_bottom: 30px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "HIGH / LOW"
             - label:
                 align: center
                 id: lbl_day4_temp
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 align: center
                 id: lbl_day4_pre
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 align: center
                 id: lbl_day4_wind
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
 
@@ -476,53 +476,53 @@
           widgets:
             - label:
                 id: lbl_day5_time
-                text_font: sf_xlg
+                text_font: xlg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -5px
             - image:
                 id: img_day5_code
                 src: missing
                 align: center
-                pad_top: -10px
+                pad_top: -15px
                 pad_bottom: -25px
             - label:
                 id: lbl_day5_cond
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_bottom: 30px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "HIGH / LOW"
             - label:
                 align: center
                 id: lbl_day5_temp
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 align: center
                 id: lbl_day5_pre
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 align: center
                 id: lbl_day5_wind
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
 
@@ -541,53 +541,53 @@
           widgets:
             - label:
                 id: lbl_day6_time
-                text_font: sf_xlg
+                text_font: xlg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -5px
             - image:
                 id: img_day6_code
                 src: missing
                 align: center
-                pad_top: -10px
+                pad_top: -15px
                 pad_bottom: -25px
             - label:
                 id: lbl_day6_cond
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_bottom: 30px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "HIGH / LOW"
             - label:
                 align: center
                 id: lbl_day6_temp
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 align: center
                 id: lbl_day6_pre
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 align: center
                 id: lbl_day6_wind
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
 

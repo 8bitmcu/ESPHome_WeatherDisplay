@@ -15,7 +15,7 @@
       # HOURLY FORECAST
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -28,10 +28,10 @@
           widgets:
             - label:
                 id: lbl_hour0_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour0_code
                 src: missing
@@ -40,46 +40,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour0_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour0_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour0_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour0_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -92,10 +92,10 @@
           widgets:
             - label:
                 id: lbl_hour1_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour1_code
                 src: missing
@@ -104,46 +104,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour1_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour1_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour1_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour1_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -156,10 +156,10 @@
           widgets:
             - label:
                 id: lbl_hour2_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour2_code
                 src: missing
@@ -168,46 +168,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour2_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour2_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour2_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour2_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -220,10 +220,10 @@
           widgets:
             - label:
                 id: lbl_hour3_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour3_code
                 src: missing
@@ -232,46 +232,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour3_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour3_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour3_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour3_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -284,10 +284,10 @@
           widgets:
             - label:
                 id: lbl_hour4_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour4_code
                 src: missing
@@ -296,46 +296,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour4_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour4_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour4_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour4_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -348,10 +348,10 @@
           widgets:
             - label:
                 id: lbl_hour5_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour5_code
                 src: missing
@@ -360,46 +360,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour5_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour5_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour5_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour5_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -412,10 +412,10 @@
           widgets:
             - label:
                 id: lbl_hour6_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour6_code
                 src: missing
@@ -424,46 +424,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour6_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour6_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour6_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour6_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -476,10 +476,10 @@
           widgets:
             - label:
                 id: lbl_hour7_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour7_code
                 src: missing
@@ -488,46 +488,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour7_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour7_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour7_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour7_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -540,10 +540,10 @@
           widgets:
             - label:
                 id: lbl_hour8_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour8_code
                 src: missing
@@ -552,46 +552,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour8_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour8_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour8_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour8_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -604,10 +604,10 @@
           widgets:
             - label:
                 id: lbl_hour9_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour9_code
                 src: missing
@@ -616,46 +616,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour9_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour9_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour9_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour9_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -668,10 +668,10 @@
           widgets:
             - label:
                 id: lbl_hour10_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour10_code
                 src: missing
@@ -680,46 +680,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour10_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour10_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour10_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour10_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -732,10 +732,10 @@
           widgets:
             - label:
                 id: lbl_hour11_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour11_code
                 src: missing
@@ -744,46 +744,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour11_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour11_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour11_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour11_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -796,10 +796,10 @@
           widgets:
             - label:
                 id: lbl_hour12_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour12_code
                 src: missing
@@ -808,46 +808,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour12_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour12_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour12_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour12_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -860,10 +860,10 @@
           widgets:
             - label:
                 id: lbl_hour13_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour13_code
                 src: missing
@@ -872,46 +872,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour13_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour13_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour13_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour13_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -924,10 +924,10 @@
           widgets:
             - label:
                 id: lbl_hour14_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour14_code
                 src: missing
@@ -936,46 +936,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour14_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour14_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour14_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour14_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -988,10 +988,10 @@
           widgets:
             - label:
                 id: lbl_hour15_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour15_code
                 src: missing
@@ -1000,46 +1000,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour15_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour15_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour15_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour15_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -1052,10 +1052,10 @@
           widgets:
             - label:
                 id: lbl_hour16_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour16_code
                 src: missing
@@ -1064,46 +1064,46 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour16_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour16_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour16_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour16_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
       - obj:
           width: 130
-          height: 350
+          height: 370
           bg_color: black
           bg_opa: 70%
           border_opa: transp
@@ -1116,10 +1116,10 @@
           widgets:
             - label:
                 id: lbl_hour17_time
-                text_font: sf_xlg
+                text_font: lg
                 text_color: white
                 pad_top: -10px
-                pad_bottom: 10px
+                pad_bottom: -10px
             - image:
                 id: img_hour17_code
                 src: missing
@@ -1128,40 +1128,40 @@
                 pad_bottom: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "TEMPERATURE"
             - label:
                 id: lbl_hour17_temp
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "PRECIPITATIONS"
             - label:
                 id: lbl_hour17_preprob
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 id: lbl_hour17_preacc
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px
             - label:
                 align: center
-                text_font: sf_xxsm
+                text_font: xxsm
                 text_color: white
                 text: "WIND SPEED"
             - label:
                 id: lbl_hour17_wind
                 align: center
-                text_font: sf_sm
+                text_font: sm
                 text_color: white
                 pad_top: -10px

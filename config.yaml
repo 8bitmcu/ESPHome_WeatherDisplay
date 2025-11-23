@@ -1,2 +1,3 @@
 substitutions:
   weather_sensor: sensor.weatherpanel_weather_forecast
+  font: "fonts/OpenSans-Medium.ttf"

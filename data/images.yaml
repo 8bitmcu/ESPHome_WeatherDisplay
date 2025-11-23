@@ -123,3 +123,7 @@ image:
     type: rgb565
     id: home_img
     transparency: alpha_channel
+  - file: "today.png"
+    type: rgb565
+    id: fakescreen
+    byte_order: little_endian
