@@ -7,9 +7,9 @@ time:
         then:
           - lvgl.label.update:
               id: lbl_datetime
-              text: !lambda return ESPTime::from_epoch_local(id(homeassistant_time).now().timestamp).strftime("%A, %B %-d   %I:%M %p");
+              text: !lambda return id(homeassistant_time).now().strftime("%A, %B %e   %I:%M %p");
     on_time_sync:
         then:
           - lvgl.label.update:
               id: lbl_datetime
-              text: !lambda return ESPTime::from_epoch_local(id(homeassistant_time).now().timestamp).strftime("%A, %B %-d   %I:%M %p");
+              text: !lambda return id(homeassistant_time).now().strftime("%A, %B %e   %I:%M %p");

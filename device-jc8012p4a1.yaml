@@ -1,6 +1,7 @@
 # Guition-ESP32-P4-JC8012P4A1 Smart Screen
 # Hardware configuration file
 # Original file from: https://github.com/agillis/esphome-modular-lvgl-buttons/blob/29410088b8520b870e00e996c278d1a822031842/modules/hardware/guition-esp32-p4-jc8012p4a1.yaml
+# with the help of: https://community.home-assistant.io/t/jc8012p4a1-guition-esp32-p4-esp32-c6/939971
 
 packages:
   - !include config.yaml
@@ -10,25 +11,21 @@ packages:
   - !include data/text_sensors.yaml
   - !include data/times.yaml
 
-external_components:
-  - source: github://willumpie82/esphome@dev
-    components: [mipi_dsi]
-  - source: github://kvj/esphome@jd9365_gsl3680
-    components: [gsl3680]
-
 esphome:
-  min_version: 2025.10.0
   name: "weatherdisplay"
   friendly_name: "WeatherDisplay"
 
+external_components:
+  - source: github://kvj/esphome@jd9365_gsl3680
+    refresh: 0s
+    components: [gsl3680, jd9365]
+
 esp32:
   board: esp32-p4-evboard
-  cpu_frequency: 400MHz
+  cpu_frequency: 360MHz
   flash_size: 16MB
   framework:
     type: esp-idf
-    advanced:
-      enable_idf_experimental_features: yes
 
 esp_ldo:
   - channel: 3
@@ -37,38 +34,8 @@ esp_ldo:
 psram:
   speed: 200MHz
 
-preferences:
-  flash_write_interval: 5min
-
-esp32_hosted:
-  variant: ESP32C6
-  reset_pin: GPIO54
-  cmd_pin: GPIO19
-  clk_pin: GPIO18
-  d0_pin: GPIO14
-  d1_pin: GPIO15
-  d2_pin: GPIO16
-  d3_pin: GPIO17
-  active_high: true
-
-output:
-  - platform: ledc
-    pin: GPIO23
-    id: gpio_backlight_pwm
-    frequency: 100Hz
-    min_power: 0.03
-    zero_means_zero: true
-
-light:
-  - platform: monochromatic
-    output: gpio_backlight_pwm
-    name: Display Backlight
-    icon: mdi:lightbulb-on
-    id: display_backlight
-    restore_mode: ALWAYS_ON
-
 i2c:
-  - id: bus_a
+  - id: i2c_bus
     sda: GPIO7
     scl: GPIO8
     scan: true
@@ -84,35 +51,83 @@ i2c_device:
   - id: i2cdev4
     address: 0x40
 
+output:
+    platform: ledc
+    pin: GPIO23
+    id: backlight
+
+light:
+  - platform: monochromatic
+    id: lcd_backlight
+    name: "backlight"
+    output: backlight
+    restore_mode: ALWAYS_ON
+
+script:
+  - id: backlight_watchdog
+    mode: restart
+    then:
+      - light.turn_on: lcd_backlight
+      - delay: 2min
+      - light.turn_off: lcd_backlight
+
 touchscreen:
   - platform: gsl3680
-    id: my_touchscreen
+    id: my_touch
     reset_pin: GPIO22
     interrupt_pin: GPIO21
     transform:
-      swap_xy: false
-      mirror_x: false
-      mirror_y: true
+      swap_xy: true
+      mirror_y: false
     on_touch:
       then:
-        - lvgl.page.next:
-            animation: OUT_LEFT
-            time: 300ms
+        - script.execute: backlight_watchdog
+        - if:
+            condition:
+              light.is_on: lcd_backlight
+            then:
+              - lvgl.page.next:
+            else:
+              - light.turn_on: lcd_backlight
 
 display:
-  - platform: mipi_dsi
-    model: JC8012P4A1
-    id: my_display
-    update_interval: never
+  - platform: jd9365
     reset_pin: GPIO27
-    rotation: 180
     auto_clear_enabled: false
-    color_order: RGB
-    dimensions:
-      width: 800
-      height: 1280
+    show_test_card: false
+    rotation: 90
+    id: my_display
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+esp32_hosted:
+  variant: ESP32C6
+  reset_pin: 54
+  cmd_pin: 19
+  clk_pin: 18
+  d0_pin: 14
+  d1_pin: 15
+  d2_pin: 16
+  d3_pin: 17
+  active_high: true
+
+api:
+
+json:
+
+# this is required for succesful compilation.
+# It doesn't need to be 'valid', it just needs to be there
+switch:
+  - platform: homeassistant
+    id: any_id
+    entity_id: switch.any_id
+    internal: true
 
 lvgl:
+  touchscreens:
+    - touchscreen_id: my_touch
   byte_order: little_endian
   pages:
     - id: home_page
@@ -125,11 +140,10 @@ lvgl:
       widgets: !include
         file: pages/hourly.yaml
 
-api:
-
 logger:
+  hardware_uart: USB_SERIAL_JTAG
   level: DEBUG
-
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+  logs:
+    lvgl: DEBUG
+    display: DEBUG
+    app: DEBUG

@@ -1,129 +1,97 @@
 image:
-  - file: "icons/missing.png"
+  defaults:
     type: rgb565
-    id: missing
-    resize: 64x64
-
-  - file: "icons/0d_big.png"
-    type: rgb565
-    id: d0
-    transparency: alpha_channel
-  - file: "icons/1d_big.png"
-    type: rgb565
-    id: d1
-    transparency: alpha_channel
-  - file: "icons/2d_big.png"
-    type: rgb565
-    id: d2
-    transparency: alpha_channel
-  - file: "icons/3d_big.png"
-    type: rgb565
-    id: d3
-    transparency: alpha_channel
-  - file: "icons/45d_big.png"
-    type: rgb565
-    id: d45
-    transparency: alpha_channel
-  - file: "icons/48d_big.png"
-    type: rgb565
-    id: d48
-    transparency: alpha_channel
-  - file: "icons/51d_big.png"
-    type: rgb565
-    id: d51
-    transparency: alpha_channel
-  - file: "icons/53d_big.png"
-    type: rgb565
-    id: d53
-    transparency: alpha_channel
-  - file: "icons/55d_big.png"
-    type: rgb565
-    id: d55
-    transparency: alpha_channel
-  - file: "icons/56d_big.png"
-    type: rgb565
-    id: d56
-    transparency: alpha_channel
-  - file: "icons/57d_big.png"
-    type: rgb565
-    id: d57
-    transparency: alpha_channel
-  - file: "icons/61d_big.png"
-    type: rgb565
-    id: d61
-    transparency: alpha_channel
-  - file: "icons/63d_big.png"
-    type: rgb565
-    id: d63
-    transparency: alpha_channel
-  - file: "icons/65d_big.png"
-    type: rgb565
-    id: d65
-    transparency: alpha_channel
-  - file: "icons/66d_big.png"
-    type: rgb565
-    id: d66
-    transparency: alpha_channel
-  - file: "icons/67d_big.png"
-    type: rgb565
-    id: d67
-    transparency: alpha_channel
-  - file: "icons/71d_big.png"
-    type: rgb565
-    id: d71
-    transparency: alpha_channel
-  - file: "icons/73d_big.png"
-    type: rgb565
-    id: d73
-    transparency: alpha_channel
-  - file: "icons/75d_big.png"
-    type: rgb565
-    id: d75
-    transparency: alpha_channel
-  - file: "icons/77d_big.png"
-    type: rgb565
-    id: d77
-    transparency: alpha_channel
-  - file: "icons/80d_big.png"
-    type: rgb565
-    id: d80
-    transparency: alpha_channel
-  - file: "icons/81d_big.png"
-    type: rgb565
-    id: d81
-    transparency: alpha_channel
-  - file: "icons/82d_big.png"
-    type: rgb565
-    id: d82
-    transparency: alpha_channel
-  - file: "icons/85d_big.png"
-    type: rgb565
-    id: d85
-    transparency: alpha_channel
-  - file: "icons/86d_big.png"
-    type: rgb565
-    id: d86
-    transparency: alpha_channel
-  - file: "icons/95d_big.png"
-    type: rgb565
-    id: d95
-    transparency: alpha_channel
-  - file: "icons/96d_big.png"
-    type: rgb565
-    id: d96
-    transparency: alpha_channel
-  - file: "icons/99d_big.png"
-    type: rgb565
-    id: d99
-    transparency: alpha_channel
-  - file: "img/bg1.png"
-    type: rgb565
-    id: bg_img
-  - file: "img/home_ico.png"
-    type: rgb565
-    id: home_img
-    transparency: alpha_channel
-  - file: "today.png"
-    type: rgb565
-    id: fakescreen
     byte_order: little_endian
+  images:
+    - file: "icons/missing.png"
+      id: missing
+      resize: 64x64
+    - file: "icons/0d_big.png"
+      id: d0
+      transparency: alpha_channel
+    - file: "icons/1d_big.png"
+      id: d1
+      transparency: alpha_channel
+    - file: "icons/2d_big.png"
+      id: d2
+      transparency: alpha_channel
+    - file: "icons/3d_big.png"
+      id: d3
+      transparency: alpha_channel
+    - file: "icons/45d_big.png"
+      id: d45
+      transparency: alpha_channel
+    - file: "icons/48d_big.png"
+      id: d48
+      transparency: alpha_channel
+    - file: "icons/51d_big.png"
+      id: d51
+      transparency: alpha_channel
+    - file: "icons/53d_big.png"
+      id: d53
+      transparency: alpha_channel
+    - file: "icons/55d_big.png"
+      id: d55
+      transparency: alpha_channel
+    - file: "icons/56d_big.png"
+      id: d56
+      transparency: alpha_channel
+    - file: "icons/57d_big.png"
+      id: d57
+      transparency: alpha_channel
+    - file: "icons/61d_big.png"
+      id: d61
+      transparency: alpha_channel
+    - file: "icons/63d_big.png"
+      id: d63
+      transparency: alpha_channel
+    - file: "icons/65d_big.png"
+      id: d65
+      transparency: alpha_channel
+    - file: "icons/66d_big.png"
+      id: d66
+      transparency: alpha_channel
+    - file: "icons/67d_big.png"
+      id: d67
+      transparency: alpha_channel
+    - file: "icons/71d_big.png"
+      id: d71
+      transparency: alpha_channel
+    - file: "icons/73d_big.png"
+      id: d73
+      transparency: alpha_channel
+    - file: "icons/75d_big.png"
+      id: d75
+      transparency: alpha_channel
+    - file: "icons/77d_big.png"
+      id: d77
+      transparency: alpha_channel
+    - file: "icons/80d_big.png"
+      id: d80
+      transparency: alpha_channel
+    - file: "icons/81d_big.png"
+      id: d81
+      transparency: alpha_channel
+    - file: "icons/82d_big.png"
+      id: d82
+      transparency: alpha_channel
+    - file: "icons/85d_big.png"
+      id: d85
+      transparency: alpha_channel
+    - file: "icons/86d_big.png"
+      id: d86
+      transparency: alpha_channel
+    - file: "icons/95d_big.png"
+      id: d95
+      transparency: alpha_channel
+    - file: "icons/96d_big.png"
+      id: d96
+      transparency: alpha_channel
+    - file: "icons/99d_big.png"
+      id: d99
+      transparency: alpha_channel
+    - file: "img/bg1.png"
+      id: bg_img
+    - file: "img/home_ico.png"
+      id: home_img
+      transparency: alpha_channel

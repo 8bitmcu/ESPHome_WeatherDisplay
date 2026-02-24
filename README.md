@@ -11,19 +11,18 @@ The hourly page displays granular weather predictions for the next 18 hours, wit
 
 ### Supported Devices
 
-~~This project has only be tested on a [Guition JC8012P4A1](https://s.click.aliexpress.com/e/_c4s9RoNT) panel so far.~~
-
-  > This project is still a work in progress! No supported devices at the moment
+This project has only be tested on a [Guition JC8012P4A1](https://s.click.aliexpress.com/e/_c4s9RoNT) panel so far.
 
 ## Installation
 
 1. Copy the content of configuration.yaml into your home assistant's configuration.yaml
 2. In the same file, change the latitude and longitude coordinates for yours
-3. Edit and go over the esphome configuration in config.yaml
+3. Edit and go over the esphome configuration in config.yaml. Add in your network credentials in device-*.yaml
 4. Flash device-*.yaml to your device. If everything went well, you should now have the weather on your panel
 
 
 ## Screenshots
 
+![guition device](assets/mounted.jpg)
 ![todays forecast](assets/today.png)
 ![hourly forecast](assets/hourly.png)
