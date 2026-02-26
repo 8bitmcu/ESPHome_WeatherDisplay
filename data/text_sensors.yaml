@@ -34,7 +34,7 @@ text_sensor:
                 if (day_times[i] != nullptr) update_fmt(day_times[i], (prefix + "_t").c_str(), "");
                 update_fmt(day_temps[i], (prefix + "_tp").c_str(), "°");
                 update_fmt(day_pres[i],  (prefix + "_pr").c_str(), " cm");
-                update_fmt(day_winds[i], (prefix + "_wd").c_str(), " km/h");
+                update_fmt(day_winds[i], (prefix + "_wd").c_str(), " kph");
 
                 std::string c_key = prefix + "_c";
                 if (root[c_key].is<int>()) {
@@ -57,13 +57,17 @@ text_sensor:
                 update_fmt(hr_temps[i], (prefix + "_tp").c_str(), "°");
                 update_fmt(hr_accs[i],  (prefix + "_pa").c_str(), " cm");
                 update_fmt(hr_probs[i], (prefix + "_pp").c_str(), "%");
-                update_fmt(hr_winds[i], (prefix + "_wd").c_str(), " km/h");
+                update_fmt(hr_winds[i], (prefix + "_wd").c_str(), " kph");
 
                 std::string h_key = prefix + "_c";
                 if (root[h_key].is<int>()) {
                   std::string c_str = std::to_string(root[h_key].as<int>());
                   lv_img_set_src(hr_imgs[i], id(weather_icon)[c_str]);
                 }
+              }
+
+              if (root["updated"].is<const char*>()) {
+                lv_label_set_text_fmt(id(lbl_last_update), "Updated: %s", root["updated"].as<const char*>());
               }
 
               return true;

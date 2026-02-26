@@ -1,10 +1,14 @@
+# Host device configuration for debugging
+
 packages:
-  - !include config.yaml
   - !include data/fonts.yaml
   - !include data/images.yaml
   - !include data/mappings.yaml
   - !include data/text_sensors.yaml
   - !include data/times.yaml
+
+substitutions:
+  font: "fonts/OpenSans-Medium.ttf"
 
 esphome:
   name: hosttest
@@ -13,6 +17,8 @@ esphome:
 host:
 
 api:
+
+json:
 
 logger:
   level: DEBUG
@@ -29,10 +35,9 @@ touchscreen:
     on_touch:
       then:
         - lvgl.page.next:
-            animation: OUT_LEFT
-            time: 300ms
 
 lvgl:
+  byte_order: little_endian
   pages:
     - id: home_page
       widgets: !include

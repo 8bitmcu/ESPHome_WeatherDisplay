@@ -2,7 +2,7 @@ sensor:
   - platform: rest
     name: "Open Meteo Raw"
     unique_id: open_meteo_raw
-    resource: "https://api.open-meteo.com/v1/forecast?latitude=LATITUDE&longitude=LONGITUDE&daily=weather_code,temperature_2m_max,precipitation_sum,wind_speed_10m_max,sunrise,sunset,surface_pressure_mean&hourly=temperature_2m,precipitation,precipitation_probability,weather_code,wind_speed_10m&current=temperature_2m,relative_humidity_2m&timezone=auto&models=gem_seamless"
+    resource: "https://api.open-meteo.com/v1/forecast?latitude=LATITUDE&longitude=LONGITUDE&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max,sunrise,sunset,surface_pressure_mean&hourly=temperature_2m,precipitation,precipitation_probability,weather_code,wind_speed_10m&current=temperature_2m,relative_humidity_2m&timezone=auto&models=gem_seamless"
     scan_interval: 900
     value_template: "{{ value_json.current.temperature_2m }}"
     json_attributes:
@@ -18,45 +18,55 @@ template:
         attributes:
           data: >
             {% set raw = states.sensor.open_meteo_raw.attributes %}
-            {% if raw.daily is defined %}
-              {% set cur = raw.current %}
-              {% set d = raw.daily %}
-              {% set h = raw.hourly %}
+            {% if raw is defined and raw.daily is defined %}
               {% set res = namespace(all={}) %}
 
-              {# Current & Specials #}
+              {# 1. Current Data #}
               {% set res.all = {
-                "cur_t": cur.temperature_2m | string,
-                "cur_h": cur.relative_humidity_2m | string,
-                "d0_sunr": (d.sunrise[0] | as_datetime | default(now())).strftime('%H:%M'),
-                "d0_suns": (d.sunset[0] | as_datetime | default(now())).strftime('%H:%M'),
-                "d0_pres": d.surface_pressure_mean[0] | string
+                "cur_t": raw.current.temperature_2m | string,
+                "cur_h": raw.current.relative_humidity_2m | string,
+                "d0_sunr": (raw.daily.sunrise[0] | as_datetime | default(now())).strftime('%H:%M'),
+                "d0_suns": (raw.daily.sunset[0] | as_datetime | default(now())).strftime('%H:%M'),
+                "d0_pres": raw.daily.surface_pressure_mean[0] | string,
+                "updated": now().strftime('%H:%M')
               } %}
 
-              {# Daily Forecast (0-6) #}
+              {# 2. Daily Forecast #}
               {% for i in range(7) %}
-                {% set res.all = dict(res.all, **{
-                  'd'~i~'_t': (d.time[i] | as_datetime | default(now())).strftime('%a'),
-                  'd'~i~'_tp': d.temperature_2m_max[i] | string,
-                  'd'~i~'_pr': d.precipitation_sum[i] | string,
-                  'd'~i~'_wd': d.wind_speed_10m_max[i] | string,
-                  'd'~i~'_c': d.weather_code[i]
-                }) %}
+                {% set day_data = {
+                  'd'~i~'_t': (raw.daily.time[i] | as_datetime | default(now())).strftime('%a'),
+                  'd'~i~'_tp': (raw.daily.temperature_2m_max[i] | round(1) | string) ~ "/" ~ (raw.daily.temperature_2m_min[i] | round(1) | string),
+                  'd'~i~'_pr': raw.daily.precipitation_sum[i] | string,
+                  'd'~i~'_wd': raw.daily.wind_speed_10m_max[i] | string,
+                  'd'~i~'_c': raw.daily.weather_code[i] | int
+                } %}
+                {% set res.all = dict(res.all, **day_data) %}
               {% endfor %}
 
-              {# Hourly Forecast (0-17) #}
+              {# 3. Hourly Forecast #}
+              {% set current_hour_str = now().strftime('%Y-%m-%dT%H:00') %}
+              {% set start_index = namespace(value=0) %}
+              {% for t in raw.hourly.time %}
+                {% if t.startswith(current_hour_str) %}
+                  {% set start_index.value = loop.index0 %}
+                {% endif %}
+              {% endfor %}
               {% for i in range(18) %}
-                {% set res.all = dict(res.all, **{
-                  'h'~i~'_t': (h.time[i] | as_datetime | default(now())).strftime('%H:%M'),
-                  'h'~i~'_tp': h.temperature_2m[i] | string,
-                  'h'~i~'_pa': h.precipitation[i] | string,
-                  'h'~i~'_pp': h.precipitation_probability[i] | string,
-                  'h'~i~'_wd': h.wind_speed_10m[i] | string,
-                  'h'~i~'_c': h.weather_code[i]
-                }) %}
+                {% set idx = start_index.value + i %}
+                {% if idx < raw.hourly.time | length %}
+                  {% set hr_data = {
+                    'h'~i~'_t': (raw.hourly.time[idx] | as_datetime | default(now())).strftime('%H:%M'),
+                    'h'~i~'_tp': raw.hourly.temperature_2m[idx] | string,
+                    'h'~i~'_pa': raw.hourly.precipitation[idx] | string,
+                    'h'~i~'_pp': raw.hourly.precipitation_probability[idx] | string,
+                    'h'~i~'_wd': raw.hourly.wind_speed_10m[idx] | string,
+                    'h'~i~'_c': raw.hourly.weather_code[idx] | int
+                  } %}
+                  {% set res.all = dict(res.all, **hr_data) %}
+                {% endif %}
               {% endfor %}
 
               {{ res.all | to_json }}
             {% else %}
-              {"error": "data_not_ready"}
+              {"error": "waiting_for_sensor"}
             {% endif %}
